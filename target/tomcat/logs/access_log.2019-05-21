@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [21/May/2019:10:52:24 +0800] "GET /test HTTP/1.1" 200 2947 http-bio-8080-exec-1 2058
+0:0:0:0:0:0:0:1 - - [21/May/2019:10:52:24 +0800] "GET /resource/img/19.jpg HTTP/1.1" 304 - http-bio-8080-exec-3 11
+0:0:0:0:0:0:0:1 - - [21/May/2019:10:52:27 +0800] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-4 177
+0:0:0:0:0:0:0:1 - - [21/May/2019:10:52:33 +0800] "GET /test HTTP/1.1" 200 2947 http-bio-8080-exec-5 9
+0:0:0:0:0:0:0:1 - - [21/May/2019:10:52:41 +0800] "POST /user/login.action HTTP/1.1" 200 25 http-bio-8080-exec-7 682
+0:0:0:0:0:0:0:1 - - [21/May/2019:10:52:43 +0800] "POST /user/login.action HTTP/1.1" 200 25 http-bio-8080-exec-8 6
+0:0:0:0:0:0:0:1 - - [21/May/2019:10:52:44 +0800] "POST /user/login.action HTTP/1.1" 200 25 http-bio-8080-exec-9 9

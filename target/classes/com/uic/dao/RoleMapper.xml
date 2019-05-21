@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.uic.dao.RoleMapper">
+    <resultMap id="roleResultMap" type="com.uic.pojo.Role">
+        <id column="id" property="id"/>
+        <result column="role_id" property="roleId"/>
+        <result column="role_name" property="roleName"/>
+    </resultMap>
+    <sql id="query_user_where">
+        flag=1
+        <if test="user!=null">
+            <if test="user.userId!=null and user.userId!=''">
+                AND user_id=#{user.userId}
+            </if>
+            <if test="user.userRoleId!=null and user.userRoleId!=''">
+                AND user_role_id=#{user.userRoleId}
+            </if>
+        </if>
+    </sql>
+
+    <select id="findRoleByRoleId" resultMap="roleResultMap">
+        SELECT * FROM login_role WHERE role_id=#{roleId}
+    </select>
+
+</mapper>

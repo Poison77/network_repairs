@@ -1,0 +1,12 @@
+com\uic\pojo\Role.class
+com\uic\service\impl\AdminServiceImpl.class
+com\uic\pojo\User.class
+com\uic\controller\LoginController.class
+com\uic\dao\RoleMapper.class
+com\uic\controller\AdminController.class
+com\uic\service\AdminService.class
+com\uic\dao\AdminMapper.class
+com\uic\service\impl\UserServiceImpl.class
+com\uic\service\UserService.class
+com\uic\dao\UserMapper.class
+com\uic\pojo\Admin.class

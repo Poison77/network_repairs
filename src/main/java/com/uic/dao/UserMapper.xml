@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.uic.dao.UserMapper">
+    <resultMap id="userResultMap" type="com.uic.pojo.User">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="user_password" property="userPassword"/>
+        <result column="user_role_id" property="userRoleId"/>
+        <result column="flag" property="flag"/>
+    </resultMap>
+    <!--<resultMap id="roleResultMap" type="com.uic.pojo.Role">-->
+        <!--<id column="id" property="id"/>-->
+        <!--<result column="role_id" property="roleId"/>-->
+        <!--<result column="role_name" property="roleName"/>-->
+    <!--</resultMap>-->
+    <sql id="query_user_where">
+        flag=1
+        <if test="user!=null">
+            <if test="user.userId!=null and user.userId!=''">
+                AND user_id=#{user.userId}
+            </if>
+            <if test="user.userRoleId!=null and user.userRoleId!=''">
+                AND user_role_id=#{user.userRoleId}
+            </if>
+        </if>
+    </sql>
+
+    <select id="findUserByUserId" resultMap="userResultMap">
+        SELECT * FROM login_user WHERE user_id=#{Id} AND flag=1
+    </select>
+
+</mapper>
