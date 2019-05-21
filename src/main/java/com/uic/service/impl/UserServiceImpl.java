@@ -31,4 +31,12 @@ public class UserServiceImpl implements UserService {
         return roleMapper.findRoleByRoleId(roleId);
     }
 
+    /**
+     * 根据用户id修改用户密码
+     */
+    @Override
+    public void updateUserPasswordByUserId(String password, String userId) throws Exception {
+        userMapper.updateUserPasswordByUserId(password, userId);
+    }
+
 }

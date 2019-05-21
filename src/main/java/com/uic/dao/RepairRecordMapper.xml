@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.uic.dao.RepairRecordMapper">
+    <!--定义学生报修信息-->
+    <resultMap id="RepairRecordMapper" type="com.uic.pojo.RepairRecord">
+        <id column="Id" property="id"></id>
+        <result column="student_id" property="studentId"></result>
+        <result column="add_time" property="addTime"></result>
+        <result column="contact_time" property="contactTime"></result>
+        <result column="repair_content" property="repairContent"></result>
+        <result column="flag" property="flag"></result>
+        <result column="result_flag" property="resultFlag"></result>
+        <result column="advice" property="advice"></result>
+    </resultMap>
+
+    <resultMap id="RepairRecordCustomMapper" type="com.uic.pojo.RepairRecordCustom">
+        <!--<id column="Id" property="id"></id>-->
+        <!--<result column="student_id" property="studentId"></result>-->
+        <!--<result column="add_time" property="addTime"></result>-->
+        <!--<result column="contact_time" property="contactTime"></result>-->
+        <!--<result column="repair_content" property="repairContent"></result>-->
+        <!--<result column="flag" property="flag"></result>-->
+        <!--<result column="result_flag" property="resultFlag"></result>-->
+        <!--<result column="advice" property="advice"></result>-->
+        <result column="name" property="name"></result>
+        <result column="phone" property="phone"></result>
+        <result column="dorm" property="dorm"></result>
+    </resultMap>
+
+    <insert id="insertRepairRecord" parameterType="com.uic.pojo.RepairRecord">
+        INSERT INTO repair_record_student(student_id,add_time,contact_time,repair_content)
+        VALUES (#{studentId},#{addTime},#{contactTime},#{repairContent})
+    </insert>
+
+    <!--遍历所有学生报修信息（未处理）-->
+    <select id="queryNoDealRepairRecord" resultMap="RepairRecordCustomMapper">
+        SELECT repair_record_student.student_id,repair_record_student.add_time,repair_record_student.contact_time,repair_record_student.repair_content,repair_record_student.result_flag,student.name,student.phone,student.dorm
+        FROM repair_record_student,student
+        WHERE repair_record_student.student_id=student.student_id
+        AND repair_record_student.result_flag=0
+        AND repair_record_student.flag=1
+        ORDER BY add_time
+    </select>
+
+</mapper>

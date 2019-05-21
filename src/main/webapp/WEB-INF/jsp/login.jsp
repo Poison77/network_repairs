@@ -16,7 +16,7 @@
             }
             function login(){
                 $.ajax({
-                    url:"${pageContext.request.contextPath}/user/login.action",
+                    url:"${pageContext.request.contextPath}/log/login.action",
                     data:{
                         userId:$("#userId").val(),
                         password:$("#password").val(),
@@ -38,11 +38,11 @@
                         }
                         if(data.character=="worker")
                         {
-                            window.location.replace("${pageContext.request.contextPath}/user/toWork.action")
+                            window.location.replace("${pageContext.request.contextPath}/log/toWork.action")
                         }
                         if(data.character=="admin")
                         {
-                            window.location.replace("${pageContext.request.contextPath}/user/toAdmin.action")
+                            window.location.replace("${pageContext.request.contextPath}/log/toAdmin.action")
                         }
                     }
                 });
