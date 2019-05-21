@@ -7,120 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90aa3f43-5271-4e78-8d38-d71acaea82cc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/controller/AdminController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/controller/LoginController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/dao/AdminMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/dao/AdminMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/dao/RoleMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/dao/RoleMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/dao/UserMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/dao/UserMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/pojo/Admin.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/pojo/Role.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/pojo/User.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/service/AdminService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/service/UserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/service/impl/AdminServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uic/service/impl/UserServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/test.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/404-style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bill_abolish.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bill_abolish_reason.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bill_again.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bill_input.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bill_print.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bill_print_preview.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bill_search.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bill_today.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bootstrap-theme.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bootstrap-theme.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bootstrap-theme.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bootstrap-theme.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/example.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/freshmanInput.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/freshmanNet.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/homePage.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/informationProcessing.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/login.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/loginInterface.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/mainPage.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/mainPageIframe.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/modifyPassword.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/notJurisdiction.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/owl.carousel.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/owl.theme.default.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/owl.theme.green.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/printBill.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/repairInput.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/repairSearchh.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/repairUserInfermation.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/text.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/tollManagement.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/userOpenFreshmanInput.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/userOpenFreshmanNet.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/userOpenInformationProcessing.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/userOpenOrderQuery.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/userOpenPrintBill.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/userOpenUserRenew.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/userRenew.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/weui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/16.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/17.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/18.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/19.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/404error-img.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/8.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/UIC.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/bbb_01.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/bbb_02.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/bbb_03.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/bbb_04.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/bg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/bg1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/error-img.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/home.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/infoimg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/invalid.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/print.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/red_asterisk.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/repair.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/uic.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/img/welcome.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/example.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/jquery-1.11.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/jquery-1.12.0.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/modifyPassword.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/moment.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/owl.carousel.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/tollManagement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/zepto.min.js" />
-      <change beforePath="$PROJECT_DIR$/README.en.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jd/controller/IndexController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/properties/db.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-trans.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-trans.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-    </list>
+    <list default="true" id="90aa3f43-5271-4e78-8d38-d71acaea82cc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -346,7 +233,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="64" />
     <option name="y" value="21" />
     <option name="width" value="1346" />
@@ -780,12 +667,12 @@
       <updated>1558367090586</updated>
       <workItem from="1558367102248" duration="1495000" />
       <workItem from="1558369124817" duration="3807000" />
-      <workItem from="1558400547917" duration="7053000" />
+      <workItem from="1558400547917" duration="7650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12355000" />
+    <option name="totallyTimeSpent" value="12952000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -797,7 +684,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
