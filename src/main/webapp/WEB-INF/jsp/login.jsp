@@ -53,8 +53,8 @@
         <div class="wrapper">
             <form class="form-signin">
                 <h2 class="form-signin-heading " align="center">河工大网络服务平台</h2>
-                <input type="text" class="tip-one form-control" id="userId" name="userId" placeholder="Username" required  oninvalid="setCustomValidity('请输入账号');" oninput="setCustomValidity('');" autofocus="" /><br>
-                <input type="password" class="tip-two form-control" id="password" name="password" placeholder="Password" required  oninvalid="setCustomValidity('请输入密码');" oninput="setCustomValidity('');"/>
+                <input type="text" class="tip-one form-control" id="userId" name="userId" placeholder="UserId" required  oninvalid="setCustomValidity('请输入账号');" oninput="setCustomValidity('');" autofocus="" /><br>
+                <input type="password" class="tip-two form-control" id="password" name="password" placeholder="PassWord" required  oninvalid="setCustomValidity('请输入密码');" oninput="setCustomValidity('');"/>
                 <span class="forgive" onclick="forgiveNum()"><a>忘记密码？</a></span>
                 <div class="blank">
                 </div>

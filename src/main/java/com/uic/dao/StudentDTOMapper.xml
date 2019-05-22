@@ -89,15 +89,26 @@
         AND student.flag=1
     </select>
     <select id="findStudentAndBroadbandByInOrder" parameterType="java.lang.String" resultMap="studentDTOResultMap">
-        SELECT student.student_id,student.name,student.student_idcard,student.dorm,student.phone,
-        useropen_broadband_student.student_access_number,useropen_broadband_student.student_accout_number,
-        useropen_broadband_student.network_speed,useropen_broadband_student.money,
-        useropen_broadband_student.start_time,useropen_broadband_student.last_time,
-        useropen_broadband_student.end_time
-        FROM   student,useropen_broadband_student
-        WHERE student.student_id IN(	SELECT student_id FROM useropen_order_student WHERE student_id=#{studentId} AND flag=1)
-        AND student.student_id=useropen_broadband_student.student_id
-        AND student.flag=1
+        SELECT
+            student.student_id,
+            student.NAME,
+            student.student_idcard,
+            student.dorm,
+            student.phone,
+            useropen_broadband_student.student_access_number,
+            useropen_broadband_student.student_accout_number,
+            useropen_broadband_student.network_speed,
+            useropen_broadband_student.money,
+            useropen_broadband_student.start_time,
+            useropen_broadband_student.last_time,
+            useropen_broadband_student.end_time
+        FROM
+            student,
+            useropen_broadband_student
+        WHERE
+            student.student_id NOT IN ( SELECT student_id FROM useropen_order_student WHERE flag = 1 )
+            AND student.student_id = useropen_broadband_student.student_id
+            AND student.flag =1
     </select>
     <select id="queryStudentAndBroadbandByNotInOrder" resultMap="studentDTOResultMap">
         SELECT student.student_id,student.name,student.student_idcard,student.dorm,student.phone,

@@ -3,11 +3,10 @@ package com.uic.pojo;
 /**
  * 学生维修信息扩展类
  */
-public class RepairRecordCustom {
+public class RepairRecordCustom extends RepairRecord{
     private String name;
     private String phone;
     private String dorm;
-    private Student student;
 
     public String getName() {
         return name;
@@ -33,21 +32,15 @@ public class RepairRecordCustom {
         this.dorm = dorm;
     }
 
-    public Student getStudent() {
-        return student;
-    }
-
-    public void setStudent(Student student) {
-        this.student = student;
-    }
-
     @Override
-    public String toString() {
+
+    public String toString(){
         return "RepairRecordCustom{" +
-                "name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", dorm='" + dorm + '\'' +
-                ", student=" + student +
+                "studentName='" + name + '\'' +
+                ", studentPhone='" + phone + '\'' +
+                ", studentDorm='" + dorm + '\'' +
+                super.toString()+
                 '}';
     }
+
 }

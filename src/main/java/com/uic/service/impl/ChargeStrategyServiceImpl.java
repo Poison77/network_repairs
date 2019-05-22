@@ -22,4 +22,28 @@ public class ChargeStrategyServiceImpl implements ChargeStrategyService {
     public List<ChargeStrategy> queryChargeStrategy() throws Exception {
         return chargeStrategyMapper.queryChargeStrategy();
     }
+
+    /**
+     * 新增收费策略信息
+     */
+    @Override
+    public void insertChargeStrategy(ChargeStrategy chargeStrategy) throws Exception {
+        chargeStrategyMapper.insertChargeStrategy(chargeStrategy);
+    }
+
+    /**
+     * 修改收费策略信息
+     */
+    @Override
+    public void updateChargeStrategy(ChargeStrategy chargeStrategy) throws Exception {
+        chargeStrategyMapper.updateChargeStrategy(chargeStrategy);
+    }
+
+    /**
+     * 逻辑删除收费策略信息
+     */
+    @Override
+    public void deleteChargeStrategyById(String id) throws Exception {
+        chargeStrategyMapper.deleteChargeStrategyById(id);
+    }
 }

@@ -85,7 +85,8 @@
                         <c:forEach var="repairRecordCustomStrList" items="${repairRecordCustomStrList}">
                             <tr onload="load()">
                                 <td>
-                                    <a href="${pageContext.request.contextPath}/worker/findRepairRecordByStudentIdAndrepairContentNot.action?studentId=${repairRecordCustomStrList.studentId}&repairContent=${repairRecordCustomStrList.repairContent}">${repairRecordCustomStrList.name}</a>
+                                    <a href="${pageContext.request.contextPath}/worker/findRepairRecordByStudentIdAndrepairContentNot.action?
+                                    studentId=${repairRecordCustomStrList.studentId}&repairContent=${repairRecordCustomStrList.repairContent}">${repairRecordCustomStrList.name}</a>
                                 </td>
                                 <td>${repairRecordCustomStrList.studentId}</td>
                                 <td>${repairRecordCustomStrList.phone}</td>

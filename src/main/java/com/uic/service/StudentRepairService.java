@@ -19,4 +19,33 @@ public interface StudentRepairService {
      */
     public List<RepairRecordCustom> queryNoDealRepairRecord() throws Exception;
 
+    /**
+     * 根据studentId查询未处理的报修信息
+     */
+    public List<RepairRecordCustom> findNoDealRepairRecoreByStudentId(String studentId) throws Exception;
+
+    /**
+     * 遍历所有已处理的学生维修信息
+     */
+    public List<RepairRecordCustom> queryDealRepairRecord() throws Exception;
+
+    /**
+     * 根据studentId查询处理的报修信息
+     */
+    public List<RepairRecordCustom> findDealRepairRecoreByStudentId(String studentId) throws Exception;
+
+    /**
+     * 遍历所有学生维修信息
+     */
+    public List<RepairRecordCustom> queryRepairRecord() throws Exception;
+
+    /**
+     * 根据学生Id查询报修信息
+     */
+    public List<RepairRecordCustom> findRepairRecordByStudentId(String studentId) throws Exception;
+
+    /**
+     * 根据sudentId与addTime来查找唯一报修记录
+     */
+    public List<RepairRecordCustom> findRepairRecordByStudentIdAndrepairContent(String studentId,String repairContent)throws Exception;
 }

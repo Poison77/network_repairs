@@ -37,8 +37,8 @@
         VALUES (#{userId},#{userPassword},#{userRoleId})
         ON DUPLICATE KEY UPDATE user_password=VALUES(user_password), user_role_id=VALUES(user_role_id),flag=1;
     </insert>
-    <update id="updateUserPasswordByUserId">
-        UPDATE login_user SET user_password=#{password} WHERE user_id=#{userId}
+    <update id="updateUserPasswordByUserId" parameterType="com.uic.pojo.User">
+        UPDATE login_user SET user_password=#{userPassword} WHERE user_id=#{userId}
     </update>
 
     <update id="deleteUserByUserId">
