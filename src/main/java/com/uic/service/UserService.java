@@ -33,6 +33,11 @@ public interface UserService {
     public Worker findWorkerByWorkerId(String workerId)throws Exception;
 
     /**
+     * 插入职工信息
+     */
+    public void insertWorker(Worker worker)throws Exception;
+
+    /**
      * 遍历所有用户
      */
     public List<User> queryUser(User user)throws Exception;
@@ -46,5 +51,24 @@ public interface UserService {
      * 查询所有职工信息
      */
     public List<Worker> queryWorker()throws Exception;
+
+    /**
+     * 存在则插入，不存在则更新用户信息
+     * @param user
+     * @throws Exception
+     */
+    public void insertOrUpdateUser(User user)throws Exception;
+
+    /**
+     * 逻辑删除用户信息
+     */
+    public void deleteUser(String userId)throws Exception;
+
+    /**
+     * 逻辑删除职工信息
+     */
+    public void deleteWorker(String workerId)throws Exception;
+
+    List<User> selectUser(User user);
 
 }

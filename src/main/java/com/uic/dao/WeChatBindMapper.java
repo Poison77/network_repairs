@@ -2,7 +2,7 @@ package com.uic.dao;
 
 import com.uic.pojo.StudentOpenId;
 import com.uic.pojo.User;
-import org.springframework.data.repository.query.Param;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * 微信绑定
@@ -38,5 +38,5 @@ public interface WeChatBindMapper {
      * @param studentId
      * @throws Exception
      */
-    public void BindOpenId(@Param("openId") String openId,@Param("studentId") String studentId) throws Exception;
+    public void BindOpenId(@Param("openId") String openId, @Param("studentId") String studentId) throws Exception;
 }

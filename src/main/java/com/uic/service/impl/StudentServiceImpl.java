@@ -1,6 +1,5 @@
 package com.uic.service.impl;
 
-import com.uic.dao.RepairRecordMapper;
 import com.uic.dao.StudentMapper;
 import com.uic.pojo.Student;
 import com.uic.service.StudentService;

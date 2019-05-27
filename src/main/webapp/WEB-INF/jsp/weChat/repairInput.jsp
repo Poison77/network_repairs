@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"  content="user-scalable=0"  name="viewport" />
-    <title>小镇网络服务平台</title>
+    <title>河工大网络服务平台</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/weui.css">
     <style>
         .content {

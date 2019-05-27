@@ -2,6 +2,7 @@ package com.uic.dao;
 
 import com.uic.pojo.RepairRecord;
 import com.uic.pojo.RepairRecordCustom;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -61,12 +62,12 @@ public interface RepairRecordMapper {
     /**
      * 根据学生维修内容修改学生报修信息及结果录入
      */
-    public void updateRepairRecordByStudentRepairContent(String repairContent,String advice)throws Exception;
+    public void updateRepairRecordByStudentRepairContent(@Param("repairContent") String repairContent,@Param("advice") String advice)throws Exception;
 
     /**
      * 根据sudentId与addTime来查找唯一报修记录
      */
-    public List<RepairRecordCustom> findRepairRecordByStudentIdAndrepairContent(String studentId,String repairContent)throws Exception;
+    public List<RepairRecordCustom>  findRepairRecordByStudentIdAndrepairContent(@Param("studentId")String studentId,@Param("repairContent")String repairContent)throws Exception;
 
     /**
      * 根据sudentId与resultFlag来查找对应的报修记录

@@ -23,4 +23,11 @@ public class testcontroller {
     public String toPage(@PathVariable("page") String page) {
         return page ;
     }
+
+
+    @RequestMapping("/{page}/{page2}")
+    public String toPage(@PathVariable("page") String page,@PathVariable("page2") String page2) {
+
+        return page+"/"+page2 ;
+    }
 }

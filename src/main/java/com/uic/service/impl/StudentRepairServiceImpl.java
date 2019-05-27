@@ -5,6 +5,7 @@ import com.uic.pojo.RepairRecord;
 import com.uic.pojo.RepairRecordCustom;
 import com.uic.service.StudentRepairService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -73,8 +74,21 @@ public class StudentRepairServiceImpl implements StudentRepairService{
     /**
      * 根据sudentId与addTime来查找唯一报修记录
      */
-    public List<RepairRecordCustom> findRepairRecordByStudentIdAndrepairContent(String studentId,String repairContent)throws Exception{
+    public List<RepairRecordCustom> findRepairRecordByStudentIdAndrepairContent(String studentId, String repairContent)throws Exception{
         return repairRecordMapper.findRepairRecordByStudentIdAndrepairContent(studentId,repairContent);
     }
 
+    /**
+     * 根据学生维修内容修改学生报修信息及结果录入
+     */
+    public void updateRepairRecordByStudentRepairContent(String repairContent,String advice)throws  Exception{
+        repairRecordMapper.updateRepairRecordByStudentRepairContent(repairContent,advice);
+    }
+
+    /**
+     * 根据studentID 与报修内容删除 对应报修信息
+     */
+    public void deleteRepairRecordByStudentIdAndrepairContent(String studentId,String repairContent)throws Exception{
+        repairRecordMapper.deleteRepairRecordByStudentIdAndrepairContent(studentId, repairContent);
+    }
 }

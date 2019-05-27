@@ -2,6 +2,7 @@ package com.uic.service;
 
 import com.uic.pojo.RepairRecord;
 import com.uic.pojo.RepairRecordCustom;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -48,4 +49,14 @@ public interface StudentRepairService {
      * 根据sudentId与addTime来查找唯一报修记录
      */
     public List<RepairRecordCustom> findRepairRecordByStudentIdAndrepairContent(String studentId,String repairContent)throws Exception;
+
+    /**
+     * 根据学生维修内容修改学生报修信息及结果录入
+     */
+    public void updateRepairRecordByStudentRepairContent(String repairContent,String advice)throws Exception;
+
+    /**
+     * 根据studentID 与报修内容删除 对应报修信息
+     */
+    public void deleteRepairRecordByStudentIdAndrepairContent(String studentId,String repairContent)throws Exception;
 }

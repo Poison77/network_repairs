@@ -10,24 +10,34 @@
     </resultMap>
     <sql id="query_user_where">
         flag=1
-        <if test="user!=null">
-            <if test="user.userId!=null and user.userId!=''">
-                AND user_id=#{user.userId}
-            </if>
-            <if test="user.userRoleId!=null and user.userRoleId!=''">
-                AND user_role_id=#{user.userRoleId}
-            </if>
+        <if test="user.userId!=null and user.userId!=''">
+            AND user_id=#{user.userId}
         </if>
+        <if test="user.userRoleId!=null and user.userRoleId!=''">
+            AND user_role_id=#{user.userRoleId}
+        </if>
+        <!--<if test="user!=null">-->
+            <!---->
+        <!--</if>-->
     </sql>
 
     <select id="queryUser" resultMap="userResultMap">
-        SELECT * FROM login_user
-        <where>
-            <include refid="query_user_where"/>
-        </where>
+        SELECT * FROM login_user where flag=1
     </select>
     <select id="findUserByUserId" resultMap="userResultMap">
         SELECT * FROM login_user WHERE user_id=#{Id} AND flag=1
+    </select>
+    <select id="selectUser" resultMap="userResultMap" parameterType="com.uic.pojo.User">
+        SELECT * FROM login_user
+        <where>
+            flag=1
+            <if test="userId!=null and userId!='' ">
+                AND user_id=#{userId}
+            </if>
+            <if test="userRoleId!=null and userRoleId!='' ">
+                AND user_role_id=#{userRoleId}
+            </if>
+        </where>
     </select>
     <insert id="insertUser" parameterType="com.uic.pojo.User">
         INSERT INTO login_user(user_id,user_password,user_role_id) VALUES (#{userId},#{userPassword},#{userRoleId})

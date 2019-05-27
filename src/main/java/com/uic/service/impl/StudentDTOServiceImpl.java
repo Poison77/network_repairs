@@ -28,4 +28,20 @@ public class StudentDTOServiceImpl implements StudentDTOService {
     public List<StudentDTO> findStudentAndBroadbandByNotInOrder(String studentId) throws Exception {
         return studentDTOMapper.findStudentAndBroadbandByNotInOrder(studentId);
     }
+
+    /**
+     * 遍历学生信息与宽带信息（两表）
+     */
+    @Override
+    public List<StudentDTO> queryStudentAndBroadband() throws Exception {
+        return studentDTOMapper.queryStudentAndBroadband();
+    }
+
+    /**
+     * 嵌套查询,只能查询到订单表存在的学号的学生信息和宽带信息（两表）
+     */
+    @Override
+    public List<StudentDTO> queryStudentAndBroadbandByOrder() throws Exception {
+        return studentDTOMapper.queryStudentAndBroadbandByInOrder();
+    }
 }

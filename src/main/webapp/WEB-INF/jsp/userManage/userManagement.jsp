@@ -13,7 +13,6 @@
     <script src="${pageContext.request.contextPath}/resource/js/jquery.js"></script>
     <script src="${pageContext.request.contextPath}/resource/js/tollManagement.js"></script>
 </head>
-<body >
 <div class="search">
     <p class="sear">用户管理</p >
     <div class="fun">
@@ -24,6 +23,7 @@
 <div class="chargeList">
     <div class="chargeList02">
         <button type="button" class="btn btn-default btn01" >添加用户</button>
+        <div id="infos" style="display: none">${msg}</div>
         <button type="button" class="btn btn-default btn04 screen" > 筛选</button>
     </div>
 
@@ -41,7 +41,7 @@
             <tr>
                 <td>${status.index+1}</td>
                 <td>${user.userId}</td>
-                <td>${user.userRoleId}</td>
+                <td>${user.roleName}</td>
                 <td><div class="btn-group">
                     <button type="button" class="btn btn-default btn02" onclick="change(${user.userId})">
                         修改密码
@@ -142,7 +142,7 @@
     <div class="modal size01" id="mymodal04">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form action="${pageContext.request.contextPath}/admin/queryUser.action" method="post">
+                <form action="${pageContext.request.contextPath}/admin/selectUser.action" method="post">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                         <h4 class="modal-title">信息</h4>
@@ -172,10 +172,24 @@
         </div><!-- /.modal-dialog -->
     </div><!-- 信息筛选 -->
 </div>
+
+
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 <script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-transition.js"></script>
 <script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-modal.js"></script>
 <script>
+
+
+    $(function(){
+
+        var info = $("#infos").text();
+        if(1===info*1){
+            alert("用户id已存在");
+        }
+
+    });
+
+
     $(function(){
         $(".btn01").click(function(){
             $("#mymodal01").modal("toggle");
@@ -211,6 +225,8 @@
             $('#test').find('input[type=checkbox]').not(this).attr("checked", false);
         });
     });
+
+
 
 
 </script>

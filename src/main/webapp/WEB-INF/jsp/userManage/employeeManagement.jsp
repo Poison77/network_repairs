@@ -26,7 +26,7 @@
         <thead>
         <tr>
             <th width="20%">序号</th>
-            <th width="20%">工号（M）</th>
+            <th width="20%">工号</th>
             <th width="20%">姓名</th>
             <th width="20%">联系方式</th>
             <th width="20%">操作</th>

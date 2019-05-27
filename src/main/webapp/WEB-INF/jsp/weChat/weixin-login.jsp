@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>小镇网络服务平台</title>
+    <title>河工大网络服务平台</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/weui.css">
     <script src="${pageContext.request.contextPath}/resource/js/jquery-1.12.0.min.js"></script>
@@ -121,10 +121,18 @@
     </div>
 
     <div class="weui-cell">
+        <div class="weui-cell__hd"><label  class="weui-label">姓名</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" id="openId" type="text" value="" name="openId" placeholder="请输入绑定用户名"/>
+        </div>
+        <div id="ts"></div>
+    </div>
+
+    <div class="weui-cell">
         <div class="weui-cell__hd"><label  class="weui-label">密码</label></div>
         <div class="weui-cell__bd">
             <input class="weui-input" id="ups" type="password" value="" name="password" placeholder="请输入密码"/>
-            <input type="hidden" id="openId" name="openId" value="${openId}">
+            <%--<input type="hidden" id="openId" name="openId" value="${openId}">--%>
         </div>
         <div id="tx"></div>
     </div>
@@ -140,7 +148,7 @@
 <div class="page">
     <div class="page__bd page__bd_spacing">
         <div class="weui-footer">
-            <p class="weui-footer__text">Copyright &copy; 2017 小镇网络服务平台</p>
+            <p class="weui-footer__text">Copyright &copy; 2019 河工大网络服务平台</p>
         </div>
     </div>
 </div>

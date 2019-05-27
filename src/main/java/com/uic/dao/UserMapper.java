@@ -43,4 +43,6 @@ public interface UserMapper {
      * 根据用户Id前缀真正的删除用户
      */
     public void deleteUserTrue(String id)throws Exception;
+
+    List<User> selectUser(User user);
 }
